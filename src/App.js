@@ -1,11 +1,35 @@
+import styled from 'styled-components';
 
+const DivElement = styled.div`
+width:20%;
+padding:10px;
+background-color:cyan;
+margin:50px auto 0 auto;
+border-radius:5px;
+
+&:hover{
+  background-color:purple;
+  
+}
+
+h1{
+  color:red;
+  text-align:center;
+}
+p{
+  color:green;
+  text-align:center;
+  font-size:23px;
+}
+`
 
 function App() {
   return (
-    <div>
-      <h1 style={{textAlign:'center', color:'blue'}}>Hello World</h1>
-      <h2 className="heading">React APP2</h2>
-    </div>
+    <DivElement>
+       <h1>Hello World</h1>
+       <p>Ritesh Maurya</p>
+       
+    </DivElement>
   );
 }
 
